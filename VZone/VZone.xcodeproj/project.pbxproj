@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8043069C8655835048328636 /* libPods-VZone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C2E206CE692908B374D8CB /* libPods-VZone.a */; };
 		819C46F91E88F67A001DCF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46F81E88F67A001DCF2E /* main.m */; };
 		819C46FC1E88F67A001DCF2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46FB1E88F67A001DCF2E /* AppDelegate.m */; };
 		819C46FF1E88F67A001DCF2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46FE1E88F67A001DCF2E /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06C2E206CE692908B374D8CB /* libPods-VZone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VZone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35B225310A0B49E99604E090 /* Pods-VZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VZone.release.xcconfig"; path = "Pods/Target Support Files/Pods-VZone/Pods-VZone.release.xcconfig"; sourceTree = "<group>"; };
 		819C46F41E88F67A001DCF2E /* VZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819C46F81E88F67A001DCF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		819C46FA1E88F67A001DCF2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		819C47181E88F67A001DCF2E /* VZoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VZoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		819C471C1E88F67A001DCF2E /* VZoneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VZoneUITests.m; sourceTree = "<group>"; };
 		819C471E1E88F67A001DCF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F429DB0FD32340FE9D2145 /* Pods-VZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VZone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VZone/Pods-VZone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8043069C8655835048328636 /* libPods-VZone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		237A14207E44CA08BACFDE79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4F429DB0FD32340FE9D2145 /* Pods-VZone.debug.xcconfig */,
+				35B225310A0B49E99604E090 /* Pods-VZone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A2B0855C0BBE24046463718 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C2E206CE692908B374D8CB /* libPods-VZone.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		819C46EB1E88F67A001DCF2E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				819C47101E88F67A001DCF2E /* VZoneTests */,
 				819C471B1E88F67A001DCF2E /* VZoneUITests */,
 				819C46F51E88F67A001DCF2E /* Products */,
+				237A14207E44CA08BACFDE79 /* Pods */,
+				6A2B0855C0BBE24046463718 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 819C47211E88F67A001DCF2E /* Build configuration list for PBXNativeTarget "VZone" */;
 			buildPhases = (
+				6E8742A0124198E5CB8D0CD8 /* [CP] Check Pods Manifest.lock */,
 				819C46F01E88F67A001DCF2E /* Sources */,
 				819C46F11E88F67A001DCF2E /* Frameworks */,
 				819C46F21E88F67A001DCF2E /* Resources */,
+				F91DB9D61CE02CB23626EB90 /* [CP] Embed Pods Frameworks */,
+				677E3EA738D872A42634826D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +297,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		677E3EA738D872A42634826D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VZone/Pods-VZone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8742A0124198E5CB8D0CD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F91DB9D61CE02CB23626EB90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VZone/Pods-VZone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		819C46F01E88F67A001DCF2E /* Sources */ = {
@@ -423,6 +498,7 @@
 		};
 		819C47221E88F67A001DCF2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F429DB0FD32340FE9D2145 /* Pods-VZone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5GUYQLDBX;
@@ -435,6 +511,7 @@
 		};
 		819C47231E88F67A001DCF2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B225310A0B49E99604E090 /* Pods-VZone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N5GUYQLDBX;
