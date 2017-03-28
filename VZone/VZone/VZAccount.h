@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <extobjc.h>
 
 @interface VZAccount : NSObject<NSCoding>
 

@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VZone/AppDelegate+RootController.m"
-            timestampString = "512305944.848498"
+            filePath = "VZone/AppDelegate.m"
+            timestampString = "512303638.78368"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "-setAppWindows"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VZone/AppDelegate.m"
-            timestampString = "512303638.78368"
+            filePath = "VZone/AppDelegate+RootController.m"
+            timestampString = "512371178.12142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-application:didFinishLaunchingWithOptions:"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "-setAppWindows"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

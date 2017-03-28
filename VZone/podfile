@@ -4,4 +4,10 @@ platform :ios, '8.0'
 target 'VZone' do
   pod 'AFNetworking', '~> 2.6'
   pod 'SDWebImage', '~> 3.7.2'
+  pod 'MBProgressHUD', '1.0.0'
+  pod 'MJRefresh', '3.1.12'
+  pod 'libextobjc', '0.4.1'
+  #realm数据库
+  #pod 'Realm', '~> 2.0.3'
+  pod 'FMDB', '2.6.2'
 end

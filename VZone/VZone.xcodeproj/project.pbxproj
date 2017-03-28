@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8043069C8655835048328636 /* libPods-VZone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C2E206CE692908B374D8CB /* libPods-VZone.a */; };
+		8170BDC11E8A0FF900DEA49A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8170BDC01E8A0FF900DEA49A /* Images.xcassets */; };
 		819C46F91E88F67A001DCF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46F81E88F67A001DCF2E /* main.m */; };
 		819C46FC1E88F67A001DCF2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46FB1E88F67A001DCF2E /* AppDelegate.m */; };
-		819C47041E88F67A001DCF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819C47031E88F67A001DCF2E /* Assets.xcassets */; };
-		819C47071E88F67A001DCF2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819C47051E88F67A001DCF2E /* LaunchScreen.storyboard */; };
 		819C47121E88F67A001DCF2E /* VZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C47111E88F67A001DCF2E /* VZoneTests.m */; };
 		819C471D1E88F67A001DCF2E /* VZoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C471C1E88F67A001DCF2E /* VZoneUITests.m */; };
 		819C47301E890AC3001DCF2E /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C472F1E890AC3001DCF2E /* AppDelegate+AppService.m */; };
@@ -43,12 +42,11 @@
 /* Begin PBXFileReference section */
 		06C2E206CE692908B374D8CB /* libPods-VZone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VZone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B225310A0B49E99604E090 /* Pods-VZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VZone.release.xcconfig"; path = "Pods/Target Support Files/Pods-VZone/Pods-VZone.release.xcconfig"; sourceTree = "<group>"; };
+		8170BDC01E8A0FF900DEA49A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		819C46F41E88F67A001DCF2E /* VZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819C46F81E88F67A001DCF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		819C46FA1E88F67A001DCF2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		819C46FB1E88F67A001DCF2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		819C47031E88F67A001DCF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		819C47061E88F67A001DCF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		819C47081E88F67A001DCF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		819C470D1E88F67A001DCF2E /* VZoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VZoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		819C47111E88F67A001DCF2E /* VZoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VZoneTests.m; sourceTree = "<group>"; };
@@ -145,6 +143,7 @@
 			children = (
 				819C472B1E89077A001DCF2E /* Bases */,
 				819C472A1E89067E001DCF2E /* Classes */,
+				8170BDC01E8A0FF900DEA49A /* Images.xcassets */,
 				819C46F71E88F67A001DCF2E /* Supporting Files */,
 			);
 			path = VZone;
@@ -193,9 +192,7 @@
 			children = (
 				819C47461E892CC3001DCF2E /* Account */,
 				819C472D1E8909CD001DCF2E /* Delegate */,
-				819C47031E88F67A001DCF2E /* Assets.xcassets */,
 				819C47081E88F67A001DCF2E /* Info.plist */,
-				819C47051E88F67A001DCF2E /* LaunchScreen.storyboard */,
 				819C472C1E8907F8001DCF2E /* config.h */,
 			);
 			name = Bases;
@@ -355,8 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819C47071E88F67A001DCF2E /* LaunchScreen.storyboard in Resources */,
-				819C47041E88F67A001DCF2E /* Assets.xcassets in Resources */,
+				8170BDC11E8A0FF900DEA49A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,17 +468,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		819C47051E88F67A001DCF2E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				819C47061E88F67A001DCF2E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		819C471F1E88F67A001DCF2E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -524,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -577,10 +562,12 @@
 			baseConfigurationReference = D4F429DB0FD32340FE9D2145 /* Pods-VZone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = N5GUYQLDBX;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = VZone/PrefixHeader.pch;
 				INFOPLIST_FILE = VZone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gxw.VZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -592,10 +579,12 @@
 			baseConfigurationReference = 35B225310A0B49E99604E090 /* Pods-VZone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = N5GUYQLDBX;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = VZone/PrefixHeader.pch;
 				INFOPLIST_FILE = VZone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gxw.VZone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
