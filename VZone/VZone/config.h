@@ -10,6 +10,10 @@
 #define config_h
 
 
+#define kThemeColor [UIColor colorWithRed:0 green:(190 / 255.0) blue:(12 / 255.0) alpha:1]
+//iphone6屏幕比例
+#define VZWidth_Scale    [UIScreen mainScreen].bounds.size.width/375.0f
+#define VZHeight_Scale  [UIScreen mainScreen].bounds.size.height/667.0f
 
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
