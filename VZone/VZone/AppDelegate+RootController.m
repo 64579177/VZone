@@ -23,6 +23,7 @@
     
     VZLoginViewController *login    =   [[VZLoginViewController alloc]init];
     UINavigationController *nav =   [[UINavigationController alloc]initWithRootViewController:login];
+    nav.navigationBar.barStyle   =UIBarStyleBlack;
     
     self.window.rootViewController = nav;
 }
@@ -33,7 +34,8 @@
 }
 
 -(void)setTabbarController{
-
+    
+    [UIApplication sharedApplication].statusBarStyle    =   UIStatusBarStyleLightContent;
     
 }
 

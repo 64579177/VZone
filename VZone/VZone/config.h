@@ -18,5 +18,10 @@
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 
-
+#define VLoadImg(imageName) [UIImage imageNamed:imageName];
+/// View 圆角
+#define ViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
 #endif /* config_h */
