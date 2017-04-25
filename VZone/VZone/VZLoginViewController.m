@@ -12,8 +12,8 @@
 
 @interface VZLoginViewController ()<UINavigationControllerDelegate>
 
-@property   (nonatomic,strong) UITextView *userName;
-@property   (nonatomic,strong) UITextView *passWord;
+@property   (nonatomic,strong) UITextField *userName;
+@property   (nonatomic,strong) UITextField *passWord;
 @property   (nonatomic,strong) UIImageView *loginBackImg;
 @property   (nonatomic,strong) UIImageView *logoImg;
 @property   (nonatomic,strong) UIButton     *loginBtn;
@@ -30,7 +30,7 @@
         _loginBtn = [[UIButton alloc]initWithFrame:CGRectMake(88,420*VZHeight_Scale , (kScreenW-88*2-40)/2,25 )];
         _loginBtn.titleLabel.text = @"登录";
         _loginBtn.titleLabel.textColor  =   kThemeColor;
-        _loginBtn.backgroundColor   =   [UIColor whiteColor];
+        _loginBtn.backgroundColor   =   [UIColor blackColor];
         [_loginBtn addTarget:self action:@selector(loginClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _loginBtn;
@@ -43,28 +43,28 @@
         _registBtn = [[UIButton alloc]initWithFrame:CGRectMake(88+(kScreenW-88*2)/2+40,420*VZHeight_Scale , (kScreenW-88*2-40)/2, 25)];
         _registBtn.titleLabel.text  =   @"注册";
         _registBtn.titleLabel.textColor  =   kThemeColor;
-        _registBtn.backgroundColor   =   [UIColor whiteColor];
+        _registBtn.backgroundColor   =   [UIColor blackColor];
     }
     return _registBtn;
 }
 
 //用户名
--(UITextView*)userName{
+-(UITextField*)userName{
 
     if(!_userName)
     {
     
-        _userName   =   [[UITextView alloc]initWithFrame:CGRectMake(88,320*VZHeight_Scale , kScreenW-88*2, 30*VZHeight_Scale)];
+        _userName   =   [[UITextField alloc]initWithFrame:CGRectMake(88,320*VZHeight_Scale , kScreenW-88*2, 30*VZHeight_Scale)];
     }
     return _userName;
 }
 
 //密码
--(UITextView*)passWord{
+-(UITextField*)passWord{
 
     if(!_passWord){
     
-        _passWord   =   [[UITextView alloc]initWithFrame:CGRectMake(88,380*VZHeight_Scale , kScreenW-88*2, 30*VZHeight_Scale)];
+        _passWord   =   [[UITextField alloc]initWithFrame:CGRectMake(88,380*VZHeight_Scale , kScreenW-88*2, 30*VZHeight_Scale)];
     }
     return _passWord;
 }
@@ -113,6 +113,26 @@
     
     [self.view addSubview:self.loginBtn];
     [self.view addSubview:self.registBtn];
+    
+    NSMutableAttributedString *user_placeholder = [[NSMutableAttributedString alloc]initWithString:@"请输入手机号"];
+    [user_placeholder addAttribute:NSForegroundColorAttributeName
+                             value:[UIColor whiteColor]
+                             range:NSMakeRange(0, 6)];
+    [user_placeholder addAttribute:NSFontAttributeName
+                             value:[UIFont systemFontOfSize:16]
+                             range:NSMakeRange(0, 6)];
+    self.userName.attributedPlaceholder = user_placeholder;
+    
+    NSMutableAttributedString *pwd_placeholder = [[NSMutableAttributedString alloc]initWithString:@"请输入密码"];
+    [pwd_placeholder addAttribute:NSForegroundColorAttributeName
+                            value:[UIColor whiteColor]
+                            range:NSMakeRange(0, 5)];
+    [pwd_placeholder addAttribute:NSFontAttributeName
+                            value:[UIFont systemFontOfSize:16]
+                            range:NSMakeRange(0, 5)];
+    self.passWord.attributedPlaceholder = pwd_placeholder;
+    
+
 }
 
 //登录
