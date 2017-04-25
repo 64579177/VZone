@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8043069C8655835048328636 /* libPods-VZone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C2E206CE692908B374D8CB /* libPods-VZone.a */; };
+		8169D84D1EAEDBFE00EC97CC /* VZBaseNetWorkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169D84C1EAEDBFE00EC97CC /* VZBaseNetWorkApi.m */; };
+		8169D8501EAEDE3800EC97CC /* VZBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169D84F1EAEDE3800EC97CC /* VZBaseResponse.m */; };
+		8169D8531EAEE26A00EC97CC /* VZMineApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169D8521EAEE26A00EC97CC /* VZMineApiManager.m */; };
+		8169D8591EAF1D6900EC97CC /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169D8581EAF1D6900EC97CC /* NSString+Hash.m */; };
 		8170BDC11E8A0FF900DEA49A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8170BDC01E8A0FF900DEA49A /* Images.xcassets */; };
 		819C46F91E88F67A001DCF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46F81E88F67A001DCF2E /* main.m */; };
 		819C46FC1E88F67A001DCF2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46FB1E88F67A001DCF2E /* AppDelegate.m */; };
@@ -42,6 +46,15 @@
 /* Begin PBXFileReference section */
 		06C2E206CE692908B374D8CB /* libPods-VZone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VZone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B225310A0B49E99604E090 /* Pods-VZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VZone.release.xcconfig"; path = "Pods/Target Support Files/Pods-VZone/Pods-VZone.release.xcconfig"; sourceTree = "<group>"; };
+		8169D84B1EAEDBFE00EC97CC /* VZBaseNetWorkApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZBaseNetWorkApi.h; sourceTree = "<group>"; };
+		8169D84C1EAEDBFE00EC97CC /* VZBaseNetWorkApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZBaseNetWorkApi.m; sourceTree = "<group>"; };
+		8169D84E1EAEDE3800EC97CC /* VZBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZBaseResponse.h; sourceTree = "<group>"; };
+		8169D84F1EAEDE3800EC97CC /* VZBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZBaseResponse.m; sourceTree = "<group>"; };
+		8169D8511EAEE26A00EC97CC /* VZMineApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZMineApiManager.h; sourceTree = "<group>"; };
+		8169D8521EAEE26A00EC97CC /* VZMineApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZMineApiManager.m; sourceTree = "<group>"; };
+		8169D8551EAEEF8F00EC97CC /* VZBaseUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VZBaseUrl.h; sourceTree = "<group>"; };
+		8169D8571EAF1D6900EC97CC /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		8169D8581EAF1D6900EC97CC /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		8170BDC01E8A0FF900DEA49A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		819C46F41E88F67A001DCF2E /* VZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819C46F81E88F67A001DCF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,6 +127,29 @@
 				06C2E206CE692908B374D8CB /* libPods-VZone.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8169D84A1EAEDBA800EC97CC /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				8169D84B1EAEDBFE00EC97CC /* VZBaseNetWorkApi.h */,
+				8169D84C1EAEDBFE00EC97CC /* VZBaseNetWorkApi.m */,
+				8169D84E1EAEDE3800EC97CC /* VZBaseResponse.h */,
+				8169D84F1EAEDE3800EC97CC /* VZBaseResponse.m */,
+				8169D8511EAEE26A00EC97CC /* VZMineApiManager.h */,
+				8169D8521EAEE26A00EC97CC /* VZMineApiManager.m */,
+				8169D8551EAEEF8F00EC97CC /* VZBaseUrl.h */,
+			);
+			name = NetWork;
+			sourceTree = "<group>";
+		};
+		8169D8561EAF1D6900EC97CC /* MD5+Hmac */ = {
+			isa = PBXGroup;
+			children = (
+				8169D8571EAF1D6900EC97CC /* NSString+Hash.h */,
+				8169D8581EAF1D6900EC97CC /* NSString+Hash.m */,
+			);
+			path = "MD5+Hmac";
 			sourceTree = "<group>";
 		};
 		819C46EB1E88F67A001DCF2E = {
@@ -190,6 +226,8 @@
 		819C472B1E89077A001DCF2E /* Bases */ = {
 			isa = PBXGroup;
 			children = (
+				8169D8561EAF1D6900EC97CC /* MD5+Hmac */,
+				8169D84A1EAEDBA800EC97CC /* NetWork */,
 				819C47461E892CC3001DCF2E /* Account */,
 				819C472D1E8909CD001DCF2E /* Delegate */,
 				819C47081E88F67A001DCF2E /* Info.plist */,
@@ -427,11 +465,15 @@
 			files = (
 				819C47391E891B9C001DCF2E /* VZLoginViewController.m in Sources */,
 				819C47301E890AC3001DCF2E /* AppDelegate+AppService.m in Sources */,
+				8169D84D1EAEDBFE00EC97CC /* VZBaseNetWorkApi.m in Sources */,
 				819C46FC1E88F67A001DCF2E /* AppDelegate.m in Sources */,
 				819C47451E8929F1001DCF2E /* BaseNavigationViewController.m in Sources */,
 				819C47491E892D1F001DCF2E /* VZAccount.m in Sources */,
 				819C47331E890ADC001DCF2E /* AppDelegate+RootController.m in Sources */,
+				8169D8591EAF1D6900EC97CC /* NSString+Hash.m in Sources */,
+				8169D8531EAEE26A00EC97CC /* VZMineApiManager.m in Sources */,
 				819C47411E8927FF001DCF2E /* VZTabbarViewController.m in Sources */,
+				8169D8501EAEDE3800EC97CC /* VZBaseResponse.m in Sources */,
 				819C47361E890AF2001DCF2E /* AppDelegate+AppLifeCircle.m in Sources */,
 				819C46F91E88F67A001DCF2E /* main.m in Sources */,
 			);

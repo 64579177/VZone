@@ -7,6 +7,8 @@
 //
 
 #import "VZLoginViewController.h"
+#import "VZMineApiManager.h"
+#import "NSString+Hash.h"
 
 @interface VZLoginViewController ()<UINavigationControllerDelegate>
 
@@ -29,6 +31,7 @@
         _loginBtn.titleLabel.text = @"登录";
         _loginBtn.titleLabel.textColor  =   kThemeColor;
         _loginBtn.backgroundColor   =   [UIColor whiteColor];
+        [_loginBtn addTarget:self action:@selector(loginClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _loginBtn;
 }
@@ -112,6 +115,23 @@
     [self.view addSubview:self.registBtn];
 }
 
+//登录
+-(void)loginClick{
+
+    [VZMineApiManager executeLoginWithUserName:self.userName.text passWord:[self.passWord.text md5String] Finished:^(BOOL success, id response, NSString *message) {
+        if(success)
+        {
+            NSLog(@"登陆成功");
+        }
+        
+    }];
+}
+
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.userName resignFirstResponder];
+    [self.passWord resignFirstResponder];
+}
 
 
 #pragma mark - UINavigationControllerDelegate
