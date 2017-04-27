@@ -11,5 +11,5 @@
 
 #import "config.h"
 #import "VZMineApiManager.h"
-
+#import "VZAccountTool.h"
 #endif /* PrefixHeader_pch */
