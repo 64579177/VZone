@@ -54,9 +54,10 @@
 		8169DAD71EB1D42700EC97CC /* UILabel+GetSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAC01EB1D42700EC97CC /* UILabel+GetSize.m */; };
 		8169DAD81EB1D42700EC97CC /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAC31EB1D42700EC97CC /* UIViewExt.m */; };
 		8169DADB1EB1D4E900EC97CC /* VZAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DADA1EB1D4E900EC97CC /* VZAccountTool.m */; };
-		8169DAE41EB1D93900EC97CC /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DADF1EB1D93900EC97CC /* BaseNavigationViewController.m */; };
 		8169DAE51EB1D93900EC97CC /* VZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAE11EB1D93900EC97CC /* VZLoginViewController.m */; };
-		8169DAE61EB1D93900EC97CC /* VZTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAE31EB1D93900EC97CC /* VZTabbarViewController.m */; };
+		8169DAEC1EB1EE6600EC97CC /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAE91EB1EE6600EC97CC /* BaseNavigationViewController.m */; };
+		8169DAED1EB1EE6600EC97CC /* VZTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAEB1EB1EE6600EC97CC /* VZTabbarViewController.m */; };
+		8169DAF01EB1EE9900EC97CC /* VZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAEF1EB1EE9900EC97CC /* VZTabBar.m */; };
 		8170BDC11E8A0FF900DEA49A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8170BDC01E8A0FF900DEA49A /* Images.xcassets */; };
 		819C46F91E88F67A001DCF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46F81E88F67A001DCF2E /* main.m */; };
 		819C47121E88F67A001DCF2E /* VZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C47111E88F67A001DCF2E /* VZoneTests.m */; };
@@ -176,12 +177,14 @@
 		8169DAD91EB1D4E900EC97CC /* VZAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZAccountTool.h; sourceTree = "<group>"; };
 		8169DADA1EB1D4E900EC97CC /* VZAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZAccountTool.m; sourceTree = "<group>"; };
 		8169DADC1EB1D84700EC97CC /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		8169DADE1EB1D93900EC97CC /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
-		8169DADF1EB1D93900EC97CC /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
 		8169DAE01EB1D93900EC97CC /* VZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZLoginViewController.h; sourceTree = "<group>"; };
 		8169DAE11EB1D93900EC97CC /* VZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZLoginViewController.m; sourceTree = "<group>"; };
-		8169DAE21EB1D93900EC97CC /* VZTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZTabbarViewController.h; sourceTree = "<group>"; };
-		8169DAE31EB1D93900EC97CC /* VZTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZTabbarViewController.m; sourceTree = "<group>"; };
+		8169DAE81EB1EE6600EC97CC /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		8169DAE91EB1EE6600EC97CC /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		8169DAEA1EB1EE6600EC97CC /* VZTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZTabbarViewController.h; sourceTree = "<group>"; };
+		8169DAEB1EB1EE6600EC97CC /* VZTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZTabbarViewController.m; sourceTree = "<group>"; };
+		8169DAEE1EB1EE9900EC97CC /* VZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZTabBar.h; sourceTree = "<group>"; };
+		8169DAEF1EB1EE9900EC97CC /* VZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZTabBar.m; sourceTree = "<group>"; };
 		8170BDC01E8A0FF900DEA49A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		819C46F41E88F67A001DCF2E /* VZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819C46F81E88F67A001DCF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -469,14 +472,24 @@
 		8169DADD1EB1D93900EC97CC /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				8169DADE1EB1D93900EC97CC /* BaseNavigationViewController.h */,
-				8169DADF1EB1D93900EC97CC /* BaseNavigationViewController.m */,
+				8169DAE71EB1EE6600EC97CC /* UINav(导航) */,
 				8169DAE01EB1D93900EC97CC /* VZLoginViewController.h */,
 				8169DAE11EB1D93900EC97CC /* VZLoginViewController.m */,
-				8169DAE21EB1D93900EC97CC /* VZTabbarViewController.h */,
-				8169DAE31EB1D93900EC97CC /* VZTabbarViewController.m */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		8169DAE71EB1EE6600EC97CC /* UINav(导航) */ = {
+			isa = PBXGroup;
+			children = (
+				8169DAE81EB1EE6600EC97CC /* BaseNavigationViewController.h */,
+				8169DAE91EB1EE6600EC97CC /* BaseNavigationViewController.m */,
+				8169DAEA1EB1EE6600EC97CC /* VZTabbarViewController.h */,
+				8169DAEB1EB1EE6600EC97CC /* VZTabbarViewController.m */,
+				8169DAEE1EB1EE9900EC97CC /* VZTabBar.h */,
+				8169DAEF1EB1EE9900EC97CC /* VZTabBar.m */,
+			);
+			path = "UINav(导航)";
 			sourceTree = "<group>";
 		};
 		819C46EB1E88F67A001DCF2E = {
@@ -727,7 +740,6 @@
 			files = (
 				8169DAD71EB1D42700EC97CC /* UILabel+GetSize.m in Sources */,
 				8169DA831EB1D30C00EC97CC /* TZGifPhotoPreviewController.m in Sources */,
-				8169DAE61EB1D93900EC97CC /* VZTabbarViewController.m in Sources */,
 				8169DA901EB1D30C00EC97CC /* VZBaseResponse.m in Sources */,
 				8169DACE1EB1D42700EC97CC /* UIButton+topImageButton.m in Sources */,
 				8169DAD31EB1D42700EC97CC /* UIImage+photoPicker.m in Sources */,
@@ -745,7 +757,7 @@
 				8169DADB1EB1D4E900EC97CC /* VZAccountTool.m in Sources */,
 				8169DA8F1EB1D30C00EC97CC /* VZBaseNetWorkApi.m in Sources */,
 				8169DAD21EB1D42700EC97CC /* UIImage+GIF_Play.m in Sources */,
-				8169DAE41EB1D93900EC97CC /* BaseNavigationViewController.m in Sources */,
+				8169DAEC1EB1EE6600EC97CC /* BaseNavigationViewController.m in Sources */,
 				8169DAD11EB1D42700EC97CC /* UIImage+Extension.m in Sources */,
 				8169DAD81EB1D42700EC97CC /* UIViewExt.m in Sources */,
 				8169DA691EB1D30C00EC97CC /* AppDelegate+RootController.m in Sources */,
@@ -759,6 +771,7 @@
 				8169DA7F1EB1D30C00EC97CC /* JYImagePickerManager.m in Sources */,
 				8169DA681EB1D30C00EC97CC /* AppDelegate+AppService.m in Sources */,
 				8169DAC51EB1D42700EC97CC /* NSData+Base64.m in Sources */,
+				8169DAF01EB1EE9900EC97CC /* VZTabBar.m in Sources */,
 				8169DA891EB1D30C00EC97CC /* TZPhotoPreviewCell.m in Sources */,
 				8169DA8A1EB1D30C00EC97CC /* TZPhotoPreviewController.m in Sources */,
 				8169DACD1EB1D42700EC97CC /* UIButton+EnlargeClickEven.m in Sources */,
@@ -767,6 +780,7 @@
 				8169DACC1EB1D42700EC97CC /* UIBarButtonItem+WNXBarButtonItem.m in Sources */,
 				8169DAD41EB1D42700EC97CC /* NSMutableAttributedString+Addtion.m in Sources */,
 				8169DA821EB1D30C00EC97CC /* TZAssetModel.m in Sources */,
+				8169DAED1EB1EE6600EC97CC /* VZTabbarViewController.m in Sources */,
 				8169DAC41EB1D42700EC97CC /* NSObject+alertShow.m in Sources */,
 				8169DA871EB1D30C00EC97CC /* TZImagePickerController.m in Sources */,
 				8169DA8B1EB1D30C00EC97CC /* TZProgressView.m in Sources */,

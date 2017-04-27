@@ -9,6 +9,7 @@
 #import "VZLoginViewController.h"
 #import "NSString+Hash.h"
 
+
 @interface VZLoginViewController ()<UINavigationControllerDelegate>
 
 @property   (nonatomic,strong) UITextField *userName;
@@ -141,6 +142,35 @@
         if(success)
         {
             NSLog(@"登陆成功");
+            if (![[UIApplication sharedApplication].keyWindow.rootViewController isKindOfClass:[UITabBarController class]]) {
+                
+                [UIApplication sharedApplication].keyWindow.rootViewController = [[UITabBarController alloc]init];
+                
+            }else{
+                UITabBarController *tab = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+                tab.selectedIndex = 0;
+                
+                //                [self conpareVersion:@"2"];
+                for (UIView *view in tab.tabBar.subviews) {
+                    
+                    if ([view isKindOfClass:[UIButton class]]) {
+                        
+                        UIButton *button = (UIButton*)view;
+                        if (view.tag == 8888) {
+                            
+                            button.enabled = NO;
+                            [tab.tabBar setValue:button forKey:@"currentSelected"];
+                        }else{
+                            
+                            button.enabled = YES;
+                        }
+                    }
+                }
+                
+                [self dismissViewControllerAnimated:YES completion:nil];
+                
+            }
+
         }
         
     }];
