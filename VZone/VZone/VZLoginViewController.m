@@ -7,7 +7,6 @@
 //
 
 #import "VZLoginViewController.h"
-#import "VZMineApiManager.h"
 #import "NSString+Hash.h"
 
 @interface VZLoginViewController ()<UINavigationControllerDelegate>

@@ -54,9 +54,9 @@ PODS:
   - libextobjc/UmbrellaHeader (0.4.1)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.12)
-  - SDWebImage (3.7.6):
-    - SDWebImage/Core (= 3.7.6)
-  - SDWebImage/Core (3.7.6)
+  - SDWebImage (4.0.0-beta2):
+    - SDWebImage/Core (= 4.0.0-beta2)
+  - SDWebImage/Core (4.0.0-beta2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -64,7 +64,7 @@ DEPENDENCIES:
   - libextobjc (= 0.4.1)
   - MBProgressHUD (= 1.0.0)
   - MJRefresh (= 3.1.12)
-  - SDWebImage (~> 3.7.2)
+  - SDWebImage (~> 4.0.0-beta2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -72,8 +72,8 @@ SPEC CHECKSUMS:
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
 
-PODFILE CHECKSUM: 5bb0f570b620b90e619557ea8c6948fc894f2843
+PODFILE CHECKSUM: bba09179cac6db509f8e1a8677961df253b398ab
 
 COCOAPODS: 1.1.1

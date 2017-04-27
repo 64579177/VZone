@@ -18,7 +18,6 @@
     NSString *loginApi =  VZ_Mine_UserLogin();
     NSDictionary *dataDict = @{@"loginName":userName,
                                @"passWord":passWord};
-    //[Tool showLoadingOnWindow];
     [VZBaseNetWorkApi postToURL:loginApi bodyParams:dataDict finished:^(VZBaseResponse *apiResponse) {
         
         if (apiResponse.isSuccess) {
@@ -32,7 +31,6 @@
         }else{
             finished(NO,nil,@"网络异常");
         }
-        //[Tool hideLodingOnWindow];
     }];
 }
 
