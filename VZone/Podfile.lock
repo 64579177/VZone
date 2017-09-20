@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.5.0):
+    - CocoaAsyncSocket/GCD (= 7.5.0)
+  - CocoaAsyncSocket/GCD (7.5.0)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
@@ -60,6 +63,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - CocoaAsyncSocket (= 7.5.0)
   - FMDB (= 2.6.2)
   - libextobjc (= 0.4.1)
   - MBProgressHUD (= 1.0.0)
@@ -68,12 +72,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
 
-PODFILE CHECKSUM: bba09179cac6db509f8e1a8677961df253b398ab
+PODFILE CHECKSUM: 91a221969bd50d6ef362aa419b62b23347383e0a
 
 COCOAPODS: 1.1.1

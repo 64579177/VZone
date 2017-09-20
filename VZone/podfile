@@ -10,4 +10,5 @@ target 'VZone' do
   #realm数据库
   #pod 'Realm', '~> 2.0.3'
   pod 'FMDB', '2.6.2'
+  pod 'CocoaAsyncSocket', '7.5.0'
 end

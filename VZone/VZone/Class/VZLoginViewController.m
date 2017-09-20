@@ -8,6 +8,7 @@
 
 #import "VZLoginViewController.h"
 #import "NSString+Hash.h"
+#import "VZTabbarViewController.h"
 
 
 @interface VZLoginViewController ()<UINavigationControllerDelegate>
