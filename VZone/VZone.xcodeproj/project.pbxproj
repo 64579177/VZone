@@ -59,6 +59,8 @@
 		8169DAED1EB1EE6600EC97CC /* VZTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAEB1EB1EE6600EC97CC /* VZTabbarViewController.m */; };
 		8169DAF01EB1EE9900EC97CC /* VZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8169DAEF1EB1EE9900EC97CC /* VZTabBar.m */; };
 		8170BDC11E8A0FF900DEA49A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8170BDC01E8A0FF900DEA49A /* Images.xcassets */; };
+		81792A1F1F7251EA00116D6F /* ChatSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 81792A1E1F7251EA00116D6F /* ChatSocket.m */; };
+		81792A251F726FF900116D6F /* webSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81792A241F726FF900116D6F /* webSocketManager.m */; };
 		819C46F91E88F67A001DCF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46F81E88F67A001DCF2E /* main.m */; };
 		819C47121E88F67A001DCF2E /* VZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C47111E88F67A001DCF2E /* VZoneTests.m */; };
 		819C471D1E88F67A001DCF2E /* VZoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C471C1E88F67A001DCF2E /* VZoneUITests.m */; };
@@ -186,6 +188,10 @@
 		8169DAEE1EB1EE9900EC97CC /* VZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZTabBar.h; sourceTree = "<group>"; };
 		8169DAEF1EB1EE9900EC97CC /* VZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZTabBar.m; sourceTree = "<group>"; };
 		8170BDC01E8A0FF900DEA49A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		81792A1D1F7251EA00116D6F /* ChatSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatSocket.h; sourceTree = "<group>"; };
+		81792A1E1F7251EA00116D6F /* ChatSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatSocket.m; sourceTree = "<group>"; };
+		81792A231F726FF900116D6F /* webSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webSocketManager.h; sourceTree = "<group>"; };
+		81792A241F726FF900116D6F /* webSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webSocketManager.m; sourceTree = "<group>"; };
 		819C46F41E88F67A001DCF2E /* VZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819C46F81E88F67A001DCF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		819C470D1E88F67A001DCF2E /* VZoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VZoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -469,13 +475,15 @@
 			path = "UIView+EX";
 			sourceTree = "<group>";
 		};
-		8169DADD1EB1D93900EC97CC /* Class */ = {
+		8169DADD1EB1D93900EC97CC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				81792A1A1F724EF000116D6F /* Chat(聊天) */,
 				8169DAE71EB1EE6600EC97CC /* UINav(导航) */,
 				8169DAE01EB1D93900EC97CC /* VZLoginViewController.h */,
 				8169DAE11EB1D93900EC97CC /* VZLoginViewController.m */,
 			);
+			name = Classes;
 			path = Class;
 			sourceTree = "<group>";
 		};
@@ -490,6 +498,33 @@
 				8169DAEF1EB1EE9900EC97CC /* VZTabBar.m */,
 			);
 			path = "UINav(导航)";
+			sourceTree = "<group>";
+		};
+		81792A1A1F724EF000116D6F /* Chat(聊天) */ = {
+			isa = PBXGroup;
+			children = (
+				81792A1B1F724F2700116D6F /* handler */,
+			);
+			name = "Chat(聊天)";
+			sourceTree = "<group>";
+		};
+		81792A1B1F724F2700116D6F /* handler */ = {
+			isa = PBXGroup;
+			children = (
+				81792A1C1F724FD000116D6F /* ChatSocket */,
+			);
+			name = handler;
+			sourceTree = "<group>";
+		};
+		81792A1C1F724FD000116D6F /* ChatSocket */ = {
+			isa = PBXGroup;
+			children = (
+				81792A1D1F7251EA00116D6F /* ChatSocket.h */,
+				81792A1E1F7251EA00116D6F /* ChatSocket.m */,
+				81792A231F726FF900116D6F /* webSocketManager.h */,
+				81792A241F726FF900116D6F /* webSocketManager.m */,
+			);
+			name = ChatSocket;
 			sourceTree = "<group>";
 		};
 		819C46EB1E88F67A001DCF2E = {
@@ -517,7 +552,7 @@
 		819C46F61E88F67A001DCF2E /* VZone */ = {
 			isa = PBXGroup;
 			children = (
-				8169DADD1EB1D93900EC97CC /* Class */,
+				8169DADD1EB1D93900EC97CC /* Classes */,
 				8169D9FA1EB1D30C00EC97CC /* Bases */,
 				8170BDC01E8A0FF900DEA49A /* Images.xcassets */,
 				819C46F71E88F67A001DCF2E /* Supporting Files */,
@@ -622,7 +657,7 @@
 				TargetAttributes = {
 					819C46F31E88F67A001DCF2E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = N5GUYQLDBX;
+						DevelopmentTeam = DM9782BRLR;
 						ProvisioningStyle = Automatic;
 					};
 					819C470C1E88F67A001DCF2E = {
@@ -742,6 +777,7 @@
 				8169DA831EB1D30C00EC97CC /* TZGifPhotoPreviewController.m in Sources */,
 				8169DA901EB1D30C00EC97CC /* VZBaseResponse.m in Sources */,
 				8169DACE1EB1D42700EC97CC /* UIButton+topImageButton.m in Sources */,
+				81792A251F726FF900116D6F /* webSocketManager.m in Sources */,
 				8169DAD31EB1D42700EC97CC /* UIImage+photoPicker.m in Sources */,
 				8169DA8D1EB1D30C00EC97CC /* UIView+Layout.m in Sources */,
 				8169DAC61EB1D42700EC97CC /* NSDate+extension.m in Sources */,
@@ -763,6 +799,7 @@
 				8169DA691EB1D30C00EC97CC /* AppDelegate+RootController.m in Sources */,
 				8169DAD01EB1D42700EC97CC /* UIImage+Color.m in Sources */,
 				8169DAC91EB1D42700EC97CC /* NSString+Validate.m in Sources */,
+				81792A1F1F7251EA00116D6F /* ChatSocket.m in Sources */,
 				8169DAE51EB1D93900EC97CC /* VZLoginViewController.m in Sources */,
 				8169DA671EB1D30C00EC97CC /* AppDelegate+AppLifeCircle.m in Sources */,
 				8169DA841EB1D30C00EC97CC /* TZImageCropManager.m in Sources */,
@@ -917,7 +954,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = N5GUYQLDBX;
+				DEVELOPMENT_TEAM = DM9782BRLR;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = VZone/PrefixHeader.pch;
 				INFOPLIST_FILE = VZone/Info.plist;
@@ -934,7 +971,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = N5GUYQLDBX;
+				DEVELOPMENT_TEAM = DM9782BRLR;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = VZone/PrefixHeader.pch;
 				INFOPLIST_FILE = VZone/Info.plist;

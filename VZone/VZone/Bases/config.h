@@ -43,4 +43,16 @@
 \
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES]
+
+
+
+//弹出的提示
+#define ShowToast(titlemessage)\
+if(titlemessage.length>0){\
+DSToast *toast = [[DSToast alloc] initWithText:(titlemessage)];\
+toast.maxWidth = 284.0;\
+toast.textInsets = UIEdgeInsetsMake(16, 15, 16, 15);\
+[toast showInView:[UIApplication sharedApplication].keyWindow showType:DSToastShowTypeCenter];}
+
+
 #endif /* config_h */

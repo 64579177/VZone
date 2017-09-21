@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>libextobjc.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,12 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
+		<key>434C8748C175A592346C0F145CB58CEE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A36881EAA419EA652CE461C9C5DDBE1</key>
+		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B5B1FE283C8A4526977B087804EE67F7</key>
+		<key>A50858E20B1380076B15B78844698FAF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD9AC30137F918E40E82DC2AEC5140A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -11,4 +11,5 @@ target 'VZone' do
   #pod 'Realm', '~> 2.0.3'
   pod 'FMDB', '2.6.2'
   pod 'CocoaAsyncSocket', '7.5.0'
+  pod 'SocketRocket'
 end

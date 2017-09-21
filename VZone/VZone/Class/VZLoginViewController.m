@@ -10,8 +10,10 @@
 #import "NSString+Hash.h"
 #import "VZTabbarViewController.h"
 
+#import "webSocketManager.h"
 
-@interface VZLoginViewController ()<UINavigationControllerDelegate>
+
+@interface VZLoginViewController ()<UINavigationControllerDelegate,getMessageDelete>
 
 @property   (nonatomic,strong) UITextField *userName;
 @property   (nonatomic,strong) UITextField *passWord;
@@ -19,6 +21,11 @@
 @property   (nonatomic,strong) UIImageView *logoImg;
 @property   (nonatomic,strong) UIButton     *loginBtn;
 @property   (nonatomic,strong) UIButton     *registBtn;
+
+
+@property   (nonatomic,strong) UIButton *sendMessage;
+
+@property   (nonatomic,strong) webSocketManager *WebSocket;
 @end
 
 
@@ -31,7 +38,7 @@
         _loginBtn = [[UIButton alloc]initWithFrame:CGRectMake(88,420*VZHeight_Scale , (kScreenW-88*2-40)/2,25 )];
         _loginBtn.titleLabel.text = @"登录";
         _loginBtn.titleLabel.textColor  =   kThemeColor;
-        _loginBtn.backgroundColor   =   [UIColor blackColor];
+        _loginBtn.backgroundColor   =   [UIColor redColor];
         [_loginBtn addTarget:self action:@selector(loginClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _loginBtn;
@@ -44,9 +51,22 @@
         _registBtn = [[UIButton alloc]initWithFrame:CGRectMake(88+(kScreenW-88*2)/2+40,420*VZHeight_Scale , (kScreenW-88*2-40)/2, 25)];
         _registBtn.titleLabel.text  =   @"注册";
         _registBtn.titleLabel.textColor  =   kThemeColor;
-        _registBtn.backgroundColor   =   [UIColor blackColor];
+        _registBtn.backgroundColor   =   [UIColor redColor];
     }
     return _registBtn;
+}
+
+-(UIButton*)sendMessage{
+    
+    if(!_sendMessage){
+        
+        _sendMessage = [[UIButton alloc]initWithFrame:CGRectMake(88+(kScreenW-88*2)/2+40,480*VZHeight_Scale , (kScreenW-88*2-40)/2+100, 25)];
+        _sendMessage.titleLabel.text  =   @"发消息";
+        _sendMessage.titleLabel.textColor  =   kThemeColor;
+        _sendMessage.backgroundColor   =   [UIColor redColor];
+        [_sendMessage addTarget:self action:@selector(sendmsg) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _sendMessage;
 }
 
 //用户名
@@ -56,6 +76,7 @@
     {
     
         _userName   =   [[UITextField alloc]initWithFrame:CGRectMake(88,320*VZHeight_Scale , kScreenW-88*2, 30*VZHeight_Scale)];
+        _userName.backgroundColor = [UIColor whiteColor];
     }
     return _userName;
 }
@@ -66,6 +87,8 @@
     if(!_passWord){
     
         _passWord   =   [[UITextField alloc]initWithFrame:CGRectMake(88,380*VZHeight_Scale , kScreenW-88*2, 30*VZHeight_Scale)];
+    
+        _passWord.backgroundColor = [UIColor whiteColor];
     }
     return _passWord;
 }
@@ -114,6 +137,8 @@
     
     [self.view addSubview:self.loginBtn];
     [self.view addSubview:self.registBtn];
+    
+    [self.view addSubview:self.sendMessage];
     
     NSMutableAttributedString *user_placeholder = [[NSMutableAttributedString alloc]initWithString:@"请输入手机号"];
     [user_placeholder addAttribute:NSForegroundColorAttributeName
@@ -175,6 +200,18 @@
         }
         
     }];
+}
+
+-(void)sendmsg{
+
+    _WebSocket= [[webSocketManager alloc]init];
+    [_WebSocket openSocket];
+    
+}
+
+#pragma mark 一一WebSocket协议方法一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+- (void)getMessageFromSocket:(NSDictionary *)message {
+    //接收到消息后做相关处理
 }
 
 
