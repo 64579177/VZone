@@ -12,4 +12,6 @@ target 'VZone' do
   pod 'FMDB', '2.6.2'
   pod 'CocoaAsyncSocket', '7.5.0'
   pod 'SocketRocket'
+  
+  pod 'Masonry'
 end

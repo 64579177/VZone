@@ -12,15 +12,19 @@
 
 #import "webSocketManager.h"
 
+#import "Masonry.h"
+
 
 @interface VZLoginViewController ()<UINavigationControllerDelegate,getMessageDelete>
 
 @property   (nonatomic,strong) UITextField *userName;
+@property   (nonatomic,strong) UIImageView *userImg;
 @property   (nonatomic,strong) UITextField *passWord;
+@property   (nonatomic,strong) UIImageView *passImg;
 @property   (nonatomic,strong) UIImageView *loginBackImg;
 @property   (nonatomic,strong) UIImageView *logoImg;
-@property   (nonatomic,strong) UIButton     *loginBtn;
-@property   (nonatomic,strong) UIButton     *registBtn;
+@property   (nonatomic,strong) UIButton    *loginBtn;
+@property   (nonatomic,strong) UIButton    *registBtn;
 
 
 @property   (nonatomic,strong) UIButton *sendMessage;
@@ -35,7 +39,7 @@
 
     if(!_loginBtn){
     
-        _loginBtn = [[UIButton alloc]initWithFrame:CGRectMake(88,420*VZHeight_Scale , (kScreenW-88*2-40)/2,25 )];
+        _loginBtn = [UIButton new];
         _loginBtn.titleLabel.text = @"登录";
         _loginBtn.titleLabel.textColor  =   kThemeColor;
         _loginBtn.backgroundColor   =   [UIColor redColor];
@@ -48,7 +52,7 @@
     
     if(!_registBtn){
         
-        _registBtn = [[UIButton alloc]initWithFrame:CGRectMake(88+(kScreenW-88*2)/2+40,420*VZHeight_Scale , (kScreenW-88*2-40)/2, 25)];
+        _registBtn = [UIButton new];
         _registBtn.titleLabel.text  =   @"注册";
         _registBtn.titleLabel.textColor  =   kThemeColor;
         _registBtn.backgroundColor   =   [UIColor redColor];
@@ -60,7 +64,7 @@
     
     if(!_sendMessage){
         
-        _sendMessage = [[UIButton alloc]initWithFrame:CGRectMake(88+(kScreenW-88*2)/2+40,480*VZHeight_Scale , (kScreenW-88*2-40)/2+100, 25)];
+        _sendMessage = [UIButton new];
         _sendMessage.titleLabel.text  =   @"发消息";
         _sendMessage.titleLabel.textColor  =   kThemeColor;
         _sendMessage.backgroundColor   =   [UIColor redColor];
@@ -74,11 +78,22 @@
 
     if(!_userName)
     {
-    
-        _userName   =   [[UITextField alloc]initWithFrame:CGRectMake(88,320*VZHeight_Scale , kScreenW-88*2, 30*VZHeight_Scale)];
+        _userName   =   [UITextField new];
+        [_userName mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(self.view);
+        }];
         _userName.backgroundColor = [UIColor whiteColor];
     }
     return _userName;
+}
+
+-(UIImageView *)userImg{
+    
+    if(!_userImg){
+        _userImg  =   [UIImageView new];
+        _userImg.image =   VLoadImg(@"logo");
+    }
+    return _userImg;
 }
 
 //密码
@@ -86,11 +101,20 @@
 
     if(!_passWord){
     
-        _passWord   =   [[UITextField alloc]initWithFrame:CGRectMake(88,380*VZHeight_Scale , kScreenW-88*2, 30*VZHeight_Scale)];
-    
+        _passWord   =  [UITextField new];
         _passWord.backgroundColor = [UIColor whiteColor];
     }
     return _passWord;
+}
+
+-(UIImageView *)passImg{
+    
+    if(!_passImg){
+        
+        _passImg  =   [UIImageView new];
+        _passImg.image =   VLoadImg(@"logo");
+    }
+    return _passImg;
 }
 
 -(UIImageView *)loginBackImg{
@@ -113,6 +137,9 @@
     }
     return _logoImg;
 }
+
+
+
 
 
 - (void)viewDidLoad {

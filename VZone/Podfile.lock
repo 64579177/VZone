@@ -55,6 +55,7 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.12)
   - SDWebImage (4.0.0-beta2):
@@ -67,6 +68,7 @@ DEPENDENCIES:
   - CocoaAsyncSocket (= 7.5.0)
   - FMDB (= 2.6.2)
   - libextobjc (= 0.4.1)
+  - Masonry
   - MBProgressHUD (= 1.0.0)
   - MJRefresh (= 3.1.12)
   - SDWebImage (~> 4.0.0-beta2)
@@ -77,11 +79,12 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: 496e0136407f5dabf413f1bd9a9c24474d809257
+PODFILE CHECKSUM: 16d94930090811d3c26d80fab730b79058f1826f
 
 COCOAPODS: 1.1.1

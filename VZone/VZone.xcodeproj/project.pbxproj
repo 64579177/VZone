@@ -61,6 +61,7 @@
 		8170BDC11E8A0FF900DEA49A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8170BDC01E8A0FF900DEA49A /* Images.xcassets */; };
 		81792A1F1F7251EA00116D6F /* ChatSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 81792A1E1F7251EA00116D6F /* ChatSocket.m */; };
 		81792A251F726FF900116D6F /* webSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81792A241F726FF900116D6F /* webSocketManager.m */; };
+		81827F38207C5B77009B11BE /* UILabel+GetActiveLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81827F37207C5B77009B11BE /* UILabel+GetActiveLabel.m */; };
 		819C46F91E88F67A001DCF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C46F81E88F67A001DCF2E /* main.m */; };
 		819C47121E88F67A001DCF2E /* VZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C47111E88F67A001DCF2E /* VZoneTests.m */; };
 		819C471D1E88F67A001DCF2E /* VZoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 819C471C1E88F67A001DCF2E /* VZoneUITests.m */; };
@@ -192,6 +193,8 @@
 		81792A1E1F7251EA00116D6F /* ChatSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatSocket.m; sourceTree = "<group>"; };
 		81792A231F726FF900116D6F /* webSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webSocketManager.h; sourceTree = "<group>"; };
 		81792A241F726FF900116D6F /* webSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webSocketManager.m; sourceTree = "<group>"; };
+		81827F36207C5B77009B11BE /* UILabel+GetActiveLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+GetActiveLabel.h"; sourceTree = "<group>"; };
+		81827F37207C5B77009B11BE /* UILabel+GetActiveLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+GetActiveLabel.m"; sourceTree = "<group>"; };
 		819C46F41E88F67A001DCF2E /* VZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819C46F81E88F67A001DCF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		819C470D1E88F67A001DCF2E /* VZoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VZoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -462,6 +465,8 @@
 				8169DABE1EB1D42700EC97CC /* UILabel+AttributedString.m */,
 				8169DABF1EB1D42700EC97CC /* UILabel+GetSize.h */,
 				8169DAC01EB1D42700EC97CC /* UILabel+GetSize.m */,
+				81827F36207C5B77009B11BE /* UILabel+GetActiveLabel.h */,
+				81827F37207C5B77009B11BE /* UILabel+GetActiveLabel.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -822,6 +827,7 @@
 				8169DA871EB1D30C00EC97CC /* TZImagePickerController.m in Sources */,
 				8169DA8B1EB1D30C00EC97CC /* TZProgressView.m in Sources */,
 				8169DA661EB1D30C00EC97CC /* VZAccount.m in Sources */,
+				81827F38207C5B77009B11BE /* UILabel+GetActiveLabel.m in Sources */,
 				8169DA6A1EB1D30C00EC97CC /* AppDelegate.m in Sources */,
 				8169DAC71EB1D42700EC97CC /* NSDate+Local.m in Sources */,
 				819C46F91E88F67A001DCF2E /* main.m in Sources */,
